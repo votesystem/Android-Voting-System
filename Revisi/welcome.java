@@ -1,4 +1,4 @@
-package com.votegubri;
+
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,7 +12,7 @@ public class welcome extends Activity
    
    Button next;   
    
-    /** Called when the activity is first created. */
+ 
    
    @Override
    
