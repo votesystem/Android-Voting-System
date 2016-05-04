@@ -1,4 +1,4 @@
-package com.votegubri;
+
 
 import java.util.ArrayList;
 
@@ -39,14 +39,14 @@ public class calon2 extends Activity
 		        
 		        postParameters.add(new BasicNameValuePair("nim", nim.getText().toString()));
 		        
-		/*            String valid = "1";*/      
+	
 		        
 		        String response = null;
 		        
 		        try 
 		        {
 		           
-		           response = CustomHttpClient.executeHttpPost("http://10.0.2.2/votegubri/check2.php", postParameters);
+		           response = CustomHttpClient.executeHttpPost("http:", postParameters);
 		           
 		           String res = response.toString();
 		           
@@ -58,7 +58,7 @@ public class calon2 extends Activity
 		           
 		           if (res.equals("1")) 
 		           {
-		        	   error.setText("ANDA SUDAH PERNAH MELAKUKAN PEMILU!!!");
+		        	   error.setText("ANDA SUDAH PERNAH MEMILIH!!!");
 		        	   		        	   
 		           }
 		           else { 	   
@@ -90,7 +90,7 @@ public class calon2 extends Activity
         try 
         {
            
-           response = CustomHttpClient.executeHttpPost("http://192.168.43.244/votegubri/check.php", postParameters);
+           response = CustomHttpClient.executeHttpPost("http://", postParameters);
            
            String res = response.toString();
            
@@ -106,7 +106,7 @@ public class calon2 extends Activity
         	   		        	   mulaivote();
            }
            else { 	   
-        	   error.setText("SILAHKAN MELAKUKAN PENDAFTARAN nim TERLEBIH DAHULU, PILIH MENU");
+        	   error.setText("SILAHKAN MELAKUKAN PENDAFTARAN ");
         	      }
         }
         
