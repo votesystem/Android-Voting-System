@@ -1,4 +1,4 @@
-package com.votegubri;
+
 
 import java.util.ArrayList;
 
@@ -46,7 +46,7 @@ public class calon1 extends Activity
 		        try 
 		        {
 		           
-		           response = CustomHttpClient.executeHttpPost("http://10.0.2.2/votegubri/check2.php", postParameters);
+		           response = CustomHttpClient.executeHttpPost("http://10.0.2.2/...../check2.php", postParameters);
 		           
 		           String res = response.toString();
 		           
@@ -58,7 +58,7 @@ public class calon1 extends Activity
 		           
 		           if (res.equals("1")) 
 		           {
-		        	   error.setText("ANDA SUDAH PERNAH MELAKUKAN PEMILU!!!");
+		        	   error.setText("ANDA SUDAH PERNAH MEMILIH !!!");
 		        	   		        	   
 		           }
 		           else { 	   
@@ -81,7 +81,7 @@ public class calon1 extends Activity
 		// TODO Auto-generated method stub
 		ArrayList<NameValuePair> postParameters = new ArrayList<NameValuePair>();
         
-        postParameters.add(new BasicNameValuePair("nik", nik.getText().toString()));
+        postParameters.add(new BasicNameValuePair("nim", nik.getText().toString()));
         
 /*            String valid = "1";*/      
         
@@ -90,7 +90,7 @@ public class calon1 extends Activity
         try 
         {
            
-           response = CustomHttpClient.executeHttpPost("http://192.168.43.244/votegubri/check.php", postParameters);
+           response = CustomHttpClient.executeHttpPost("http://192.168.43.244/...../check.php", postParameters);
            
            String res = response.toString();
            
