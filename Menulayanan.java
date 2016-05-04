@@ -1,4 +1,4 @@
-package com.votegubri;
+
 
 import android.app.ListActivity;
 import android.content.Intent;
