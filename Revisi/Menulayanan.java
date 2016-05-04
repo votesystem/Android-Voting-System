@@ -12,8 +12,7 @@ public class Menulayanan extends ListActivity {
 
 	public void onCreate(Bundle icicle) {
 		super.onCreate(icicle);
-		
-		//membuat daftar list nya
+	
 		String []Menulayanan = new String [] 
 		{"Daftar" , "Contreng", "Hasil"};
 	
