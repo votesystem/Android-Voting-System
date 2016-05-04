@@ -1,4 +1,4 @@
-package com.votegubri;
+
 
 import android.app.ListActivity;
 import android.content.Intent;
@@ -26,7 +26,7 @@ public class Menulayanan extends ListActivity {
 	{
 		super.onListItemClick(l, v, position, id);
 		Object o = this.getListAdapter().getItem(position);
-		// objek o adalah tempat penampungan dari apa saja yang dipilih nanti
+	
 		String pilihan = o.toString();
 		
 		tampilkanpilihan (pilihan);
