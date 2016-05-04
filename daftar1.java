@@ -1,4 +1,4 @@
-package com.votegubri;
+
 
 import java.util.ArrayList;
 
@@ -47,7 +47,7 @@ public class daftar1 extends Activity {
         	     	     
             ArrayList<NameValuePair> postParameters = new ArrayList<NameValuePair>();
             postParameters.add(new BasicNameValuePair("nama", nm.getText().toString()));
-            postParameters.add(new BasicNameValuePair("nik", nk.getText().toString()));
+            postParameters.add(new BasicNameValuePair("nim", nk.getText().toString()));
             
 /*            String valid = "1";*/      
             
@@ -55,7 +55,7 @@ public class daftar1 extends Activity {
             
             try {
                
-               response = CustomHttpClient.executeHttpPost("http://10.0.2.2/votegubri/data.php", postParameters);
+               response = CustomHttpClient.executeHttpPost("http://10.0.2.2/...../data.php", postParameters);
                
                String res = response.toString();
                
