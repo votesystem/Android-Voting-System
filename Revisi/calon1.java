@@ -1,4 +1,4 @@
-package com.votegubri;
+
 
 import java.util.ArrayList;
 
@@ -39,14 +39,13 @@ public class calon1 extends Activity
 		        
 		        postParameters.add(new BasicNameValuePair("nim", nim.getText().toString()));
 		        
-		/*            String valid = "1";*/      
-		        
+	
 		        String response = null;
 		        
 		        try 
 		        {
 		           
-		           response = CustomHttpClient.executeHttpPost("http://10.0.2.2/votegubri/check2.php", postParameters);
+		           response = CustomHttpClient.executeHttpPost("http:", postParameters);
 		           
 		           String res = response.toString();
 		           
@@ -90,7 +89,7 @@ public class calon1 extends Activity
         try 
         {
            
-           response = CustomHttpClient.executeHttpPost("http://127.0.0.1/votegubri/check.php", postParameters);
+           response = CustomHttpClient.executeHttpPost("httpphp", postParameters);
            
            String res = response.toString();
            
@@ -106,7 +105,7 @@ public class calon1 extends Activity
         	   		        	   mulaivote();
            }
            else { 	   
-        	   error.setText("SILAHKAN MELAKUKAN PENDAFTARAN nim TERLEBIH DAHULU, PILIH MENU");
+        	   error.setText("SILAHKAN MELAKUKAN PENDAFTARAN );
         	      }
         }
         
@@ -118,7 +117,7 @@ public class calon1 extends Activity
 	}
 
 	protected void success( ) {
-		// TODO Auto-generated method stub
+		/
 		Intent j = new Intent(this,finish.class);
 	   	startActivity(j);
 	}
@@ -136,7 +135,7 @@ public class calon1 extends Activity
         
         try {
            
-           response = CustomHttpClient.executeHttpPost("http://192.168.43.244/votegubri/hasil2.php", postParameters);
+           response = CustomHttpClient.executeHttpPost("http://", postParameters);
            
            String res = response.toString();
            
