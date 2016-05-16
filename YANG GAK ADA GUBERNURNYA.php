@@ -31,8 +31,8 @@ ORDER BY hasil DESC");
 
 <table border ="1"  bordercolor="blue" cellpadding="3dp">
 <tr  align ="center" bgcolor="iceblue">
-<th> Cagub </th>
-<th> Cawagub </th>
+<th> Ketua </th>
+<th> Wakil </th>
 <th> Hasil </th>
 </tr>
 <tr >
